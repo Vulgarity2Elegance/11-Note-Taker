@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname + "/public")));
 
 // ROUTER
 require("./routes/htmlNotes")(app);
-// require("./routes/apiNotes")(app);
+require("./routes/apiNotes")(app);
 
 // LISTENER
 app.listen(PORT, () => {
